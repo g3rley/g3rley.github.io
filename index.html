@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerley Adriano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9f6;
+    --ink: #3d362f;
+    --ink-soft: #948a7c;
+    --accent: #8a6b4e;
+    --line: #e6e1d6;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, 'Iowan Old Style', serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 96px 24px 64px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.85rem;
+    margin: 0 0 4px;
+    letter-spacing: 0.003em;
+  }
+
+  .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    margin: 0 0 32px;
+  }
+
+  .bio {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: var(--ink);
+    margin: 0 0 28px;
+    max-width: 44ch;
+  }
+
+  .tags {
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0 0 48px;
+  }
+
+  h2 {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 48px;
+  }
+
+  .link-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .links a.link-row:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .link-row:hover .link-label {
+    color: var(--accent);
+  }
+
+  .link-label {
+    font-size: 0.98rem;
+    transition: color 0.15s ease;
+  }
+
+  .link-value {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .press {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .press-item {
+    display: block;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .press:last-child .press-item:last-child,
+  .press-item:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .press-title {
+    font-size: 0.98rem;
+    line-height: 1.5;
+    transition: color 0.15s ease;
+  }
+
+  .press-item:hover .press-title {
+    color: var(--accent);
+  }
+
+  .press-source {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 3px;
+  }
+
+  footer {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #201b16;
+      --ink: #e6ddd0;
+      --ink-soft: #9c8f7c;
+      --accent: #c9a876;
+      --line: #35302a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #201b16;
+    --ink: #e6ddd0;
+    --ink-soft: #9c8f7c;
+    --accent: #c9a876;
+    --line: #35302a;
+  }
+
+  @media (max-width: 420px) {
+    body { padding-top: 64px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gerley Adriano</h1>
+  <p class="role">Medical Student &middot; Research &amp; Technology</p>
+
+  <p class="bio">
+    Medical student at UniEVANGÉLICA, involved in student leadership with IFMSA Brazil
+    and in scientific research. Interested in applying artificial intelligence to healthcare
+    and building technology for medicine.
+  </p>
+
+  <p class="tags">Medicine &middot; IFMSA &middot; Scientific Research &middot; Software Development</p>
+
+  <nav class="links">
+    <a class="link-row" href="mailto:g3rley@gmail.com">
+      <span class="link-label">Email</span>
+      <span class="link-value">g3rley@gmail.com</span>
+    </a>
+    <a class="link-row" href="https://github.com/g3rley" target="_blank" rel="noopener">
+      <span class="link-label">GitHub</span>
+      <span class="link-value">@g3rley</span>
+    </a>
+    <a class="link-row" href="https://br.linkedin.com/in/g3rley/en" target="_blank" rel="noopener">
+      <span class="link-label">LinkedIn</span>
+      <span class="link-value">/in/g3rley</span>
+    </a>
+    <a class="link-row" href="https://www.instagram.com/g3rley/" target="_blank" rel="noopener">
+      <span class="link-label">Instagram</span>
+      <span class="link-value">@g3rley</span>
+    </a>
+  </nav>
+
+  <h2>Featured In</h2>
+  <div class="press">
+    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/unievangelica-se-destaca-em-congresso-nacional-de-medicina-com-11-trabalhos-aprovados" target="_blank" rel="noopener">
+      <span class="press-title">UniEVANGÉLICA stands out at national medical congress with 11 papers accepted</span>
+      <span class="press-source">UniEVANGÉLICA News</span>
+    </a>
+    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/curso-de-medicina-brilha-em-encontro-regional-da-ifmsa-brazil-com-pesquisa-premiada" target="_blank" rel="noopener">
+      <span class="press-title">Medical program shines at IFMSA Brazil regional meeting with award-winning research</span>
+      <span class="press-source">UniEVANGÉLICA News</span>
+    </a>
+    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/ideias-que-transformam-academicos-da-unievangelica-brilham-no-2o-hackathon" target="_blank" rel="noopener">
+      <span class="press-title">Ideas that transform: UniEVANGÉLICA students shine at the 2nd Hackathon</span>
+      <span class="press-source">UniEVANGÉLICA News</span>
+    </a>
+    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/alunos-de-medicina-representam-goias-na-62a-assembleia-geral-da-ifmsa-brazil" target="_blank" rel="noopener">
+      <span class="press-title">Medical students represent Goiás at the 62nd IFMSA Brazil General Assembly</span>
+      <span class="press-source">UniEVANGÉLICA News</span>
+    </a>
+    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/estudantes-de-medicina-da-unievangelica-se-destacam-no-9o-congresso-de-educacao-medica-do-centro-oeste" target="_blank" rel="noopener">
+      <span class="press-title">Medical students stand out at the 9th Midwest Medical Education Congress</span>
+      <span class="press-source">UniEVANGÉLICA News</span>
+    </a>
+  </div>
+
+  <footer>Anápolis, Goiás — Brazil</footer>
+</main>
+</body>
+</html>
