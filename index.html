@@ -13,13 +13,18 @@
   <meta name="description" content="Medical student at UniEVANGÉLICA, researcher in healthcare AI, biostatistics, and medical software. Statistical reviewer for BMSJ and founder of Cardio.">
   <meta name="author" content="Gerley Adriano">
   <meta name="keywords" content="Gerley Adriano, Medicine, Medical Student, UniEVANGÉLICA, IFMSA Brazil, AI in Healthcare, Biostatistics, Medical Software, Cardio, ECG Training">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://g3rley.github.io/">
 
-  <!-- Favicon & Touch Icons -->
+  <!-- Search Engine Directives for High-Quality Rich Snippets -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Favicon & Web Manifest -->
   <link rel="icon" type="image/jpeg" href="assets/profile.jpg">
   <link rel="shortcut icon" type="image/jpeg" href="assets/profile.jpg">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/profile.jpg">
+  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#ffffff">
 
@@ -32,6 +37,8 @@
   <meta property="og:image" content="https://g3rley.github.io/assets/profile.jpg">
   <meta property="og:image:secure_url" content="https://g3rley.github.io/assets/profile.jpg">
   <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
   <meta property="og:image:alt" content="Gerley Adriano">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="pt_BR">
@@ -46,27 +53,76 @@
   <meta name="twitter:image" content="https://g3rley.github.io/assets/profile.jpg">
   <meta name="twitter:image:alt" content="Gerley Adriano">
 
-  <!-- Schema.org JSON-LD for Rich Snippets -->
+  <!-- Schema.org JSON-LD (Google ProfilePage & Knowledge Graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Gerley Adriano",
-    "url": "https://g3rley.github.io/",
-    "image": "https://g3rley.github.io/assets/profile.jpg",
-    "jobTitle": "Medical Student & Healthcare AI Researcher",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Universidade Evangélica de Goiás",
-      "url": "https://www4.unievangelica.edu.br/"
-    },
-    "sameAs": [
-      "http://lattes.cnpq.br/2315703716723494",
-      "https://orcid.org/0009-0001-5303-8251",
-      "https://github.com/g3rley",
-      "https://br.linkedin.com/in/g3rley/en",
-      "https://www.instagram.com/g3rley/",
-      "https://cardiogame.com.br/"
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://g3rley.github.io/#profilepage",
+        "url": "https://g3rley.github.io/",
+        "name": "Gerley Adriano — Medicine, Research & Technology",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://g3rley.github.io/#website",
+          "name": "Gerley Adriano",
+          "url": "https://g3rley.github.io/"
+        },
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://g3rley.github.io/#person",
+          "name": "Gerley Adriano",
+          "alternateName": ["g3rley", "Gerley Adriano UniEVANGÉLICA"],
+          "url": "https://g3rley.github.io/",
+          "image": "https://g3rley.github.io/assets/profile.jpg",
+          "jobTitle": "Medical Student & Healthcare AI Researcher",
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Medical Researcher & Software Developer"
+          },
+          "affiliation": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universidade Evangélica de Goiás",
+              "url": "https://www4.unievangelica.edu.br/"
+            },
+            {
+              "@type": "Organization",
+              "name": "IFMSA Brazil",
+              "url": "https://ifmsabrazil.org/"
+            },
+            {
+              "@type": "Periodical",
+              "name": "Brazilian Medical Students Journal (BMSJ)",
+              "url": "https://revistas.ifmsabrazil.org/bms/"
+            }
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence in Healthcare",
+            "Cardiovascular Medicine",
+            "Biostatistics",
+            "Electrocardiography",
+            "Medical Software Engineering",
+            "Evidence-Based Medicine"
+          ],
+          "founder": {
+            "@type": "SoftwareApplication",
+            "name": "Cardio",
+            "url": "https://cardiogame.com.br/",
+            "applicationCategory": "MedicalApplication",
+            "operatingSystem": "Web, iOS, Android"
+          },
+          "sameAs": [
+            "http://lattes.cnpq.br/2315703716723494",
+            "https://orcid.org/0009-0001-5303-8251",
+            "https://github.com/g3rley",
+            "https://br.linkedin.com/in/g3rley/en",
+            "https://www.instagram.com/g3rley/",
+            "https://cardiogame.com.br/"
+          ]
+        }
+      }
     ]
   }
   </script>
@@ -718,7 +774,7 @@
 <body>
   <main>
     <header class="profile-header">
-      <img src="assets/profile.jpg" alt="Gerley Adriano" class="avatar">
+      <img src="assets/profile.jpg" alt="Gerley Adriano — Medical Student and Healthcare AI Researcher" class="avatar" width="96" height="96" fetchpriority="high">
       <div class="profile-info">
         <h1>Gerley Adriano</h1>
         <p class="role">Medical Student &middot; Research &amp; Technology</p>
@@ -735,11 +791,11 @@
 
     <div class="photo-grid">
       <div class="photo-item">
-        <img src="assets/presentation.jpg" alt="Research presentation at medical congress">
+        <img src="assets/presentation.jpg" alt="Gerley Adriano presenting medical research at IFMSA Brazil General Assembly" width="300" height="200" loading="lazy">
         <span class="photo-caption">Presenting research at national medical congress</span>
       </div>
       <div class="photo-item">
-        <img src="assets/whiteboard.jpg" alt="Building technology and software architecture">
+        <img src="assets/whiteboard.jpg" alt="Gerley Adriano working on healthcare software architecture and biostatistical engineering" width="300" height="200" loading="lazy">
         <span class="photo-caption">Architecture & software engineering for healthcare</span>
       </div>
     </div>
@@ -748,7 +804,7 @@
     <div class="project-card">
       <div class="project-header">
         <div class="project-title-wrap">
-          <img src="assets/cardio-logo.png" alt="Cardio Logo" class="project-logo">
+          <img src="assets/cardio-logo.png" alt="Cardio — ECG Training & ACLS Decision Platform Logo" class="project-logo" width="46" height="46" loading="lazy">
           <div>
             <div class="project-title-row">
               <span class="project-name">Cardio</span>
@@ -956,7 +1012,7 @@
         <div class="ig-header">
           <div class="ig-user-wrap">
             <div class="ig-avatar-ring">
-              <img src="assets/profile.jpg" alt="Gerley Adriano" class="ig-avatar-img">
+              <img src="assets/profile.jpg" alt="Gerley Adriano Instagram profile" class="ig-avatar-img" width="28" height="28" loading="lazy">
             </div>
             <div class="ig-user-meta">
               <span class="ig-handle">@g3rley</span>
@@ -972,7 +1028,7 @@
           </div>
         </div>
         <div class="ig-thumb-wrap">
-          <img src="assets/reel1.jpg" alt="Trajetória Acadêmica e Pesquisa na Medicina" class="ig-thumb-img">
+          <img src="assets/reel1.jpg" alt="Gerley Adriano — Trajetória Acadêmica e Pesquisa na Medicina (Instagram Reel)" class="ig-thumb-img" width="300" height="240" loading="lazy">
           <div class="ig-play-overlay">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
           </div>
@@ -997,7 +1053,7 @@
         <div class="ig-header">
           <div class="ig-user-wrap">
             <div class="ig-avatar-ring">
-              <img src="assets/profile.jpg" alt="Gerley Adriano" class="ig-avatar-img">
+              <img src="assets/profile.jpg" alt="Gerley Adriano Instagram profile" class="ig-avatar-img" width="28" height="28" loading="lazy">
             </div>
             <div class="ig-user-meta">
               <span class="ig-handle">@g3rley</span>
@@ -1013,7 +1069,7 @@
           </div>
         </div>
         <div class="ig-thumb-wrap">
-          <img src="assets/reel2.jpg" alt="A Relação Médico-Paciente: Ouvir também é cuidar" class="ig-thumb-img">
+          <img src="assets/reel2.jpg" alt="Gerley Adriano — A Relação Médico-Paciente: Ouvir também é cuidar (Instagram Reel)" class="ig-thumb-img" width="300" height="240" loading="lazy">
           <div class="ig-play-overlay">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
           </div>
@@ -1036,7 +1092,7 @@
     </div>
 
     <h2>Featured In</h2>
-    <img src="assets/team.jpg" alt="IFMSA Brazil Scientific Team" class="press-banner">
+    <img src="assets/team.jpg" alt="Gerley Adriano and IFMSA Brazil Scientific Team at National Assembly" class="press-banner" width="620" height="240" loading="lazy">
 
     <div class="press">
       <a class="press-item"

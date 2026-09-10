@@ -1,0 +1,16 @@
+{
+  "name": "Gerley Adriano — Medicine, Research & Technology",
+  "short_name": "Gerley Adriano",
+  "description": "Medical student at UniEVANGÉLICA, researcher in healthcare AI, biostatistics, and medical software. Statistical reviewer for BMSJ and founder of Cardio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
