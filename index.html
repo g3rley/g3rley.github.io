@@ -147,8 +147,14 @@
       --badge-text: #6b5e4f;
     }
 
-    * {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     html,
@@ -160,6 +166,10 @@
       font-family: 'Source Serif 4', Georgia, 'Iowan Old Style', serif;
       font-style: normal;
       -webkit-font-smoothing: antialiased;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     i,
@@ -179,6 +189,37 @@
       display: flex;
       justify-content: center;
       padding: 80px 24px;
+      position: relative;
+    }
+
+    /* Balanced CRT Analog Screen Filter */
+    body::before {
+      content: " ";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.032) 50%),
+                  linear-gradient(90deg, rgba(255, 0, 0, 0.010), rgba(0, 255, 0, 0.007), rgba(0, 0, 255, 0.010));
+      z-index: 99999;
+      background-size: 100% 2.5px, 3.5px 100%;
+      pointer-events: none;
+      opacity: 0.68;
+    }
+
+    body::after {
+      content: " ";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: radial-gradient(circle at center, transparent 68%, rgba(35, 25, 15, 0.055) 100%);
+      pointer-events: none;
+      z-index: 99999;
     }
 
     main {
