@@ -1,241 +1,1071 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerley Adriano</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #faf9f6;
-    --ink: #3d362f;
-    --ink-soft: #948a7c;
-    --accent: #8a6b4e;
-    --line: #e6e1d6;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerley Adriano — Medicine, Research &amp; Technology</title>
+  
+  <meta name="description" content="Medical student at UniEVANGÉLICA, researcher in healthcare AI, biostatistics, and software. Founder of Cardio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gerley Adriano">
+  <meta property="og:description" content="Medical student at UniEVANGÉLICA and researcher in healthcare AI, biostatistics, and medical software.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:url" content="https://g3rley.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gerley Adriano">
+  <meta name="twitter:description" content="Medical student at UniEVANGÉLICA, AI in medicine researcher, and founder of Cardio.">
+  <meta name="twitter:image" content="assets/profile.jpg">
 
-  * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Source Serif 4', Georgia, 'Iowan Old Style', serif;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 96px 24px 64px;
-  }
-
-  main {
-    width: 100%;
-    max-width: 480px;
-  }
-
-  h1 {
-    font-weight: 500;
-    font-size: 1.85rem;
-    margin: 0 0 4px;
-    letter-spacing: 0.003em;
-  }
-
-  .role {
-    font-style: italic;
-    color: var(--ink-soft);
-    font-size: 1.02rem;
-    margin: 0 0 32px;
-  }
-
-  .bio {
-    font-size: 1.02rem;
-    line-height: 1.75;
-    color: var(--ink);
-    margin: 0 0 28px;
-    max-width: 44ch;
-  }
-
-  .tags {
-    font-size: 0.86rem;
-    color: var(--ink-soft);
-    font-style: italic;
-    margin: 0 0 48px;
-  }
-
-  h2 {
-    font-size: 0.78rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-soft);
-    margin: 0 0 14px;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 48px;
-  }
-
-  .link-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 0;
-    border-top: 1px solid var(--line);
-    text-decoration: none;
-    color: var(--ink);
-  }
-
-  .links a.link-row:last-child {
-    border-bottom: 1px solid var(--line);
-  }
-
-  .link-row:hover .link-label {
-    color: var(--accent);
-  }
-
-  .link-label {
-    font-size: 0.98rem;
-    transition: color 0.15s ease;
-  }
-
-  .link-value {
-    font-size: 0.88rem;
-    color: var(--ink-soft);
-    font-style: italic;
-    white-space: nowrap;
-  }
-
-  .press {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .press-item {
-    display: block;
-    padding: 12px 0;
-    border-top: 1px solid var(--line);
-    text-decoration: none;
-    color: var(--ink);
-  }
-
-  .press:last-child .press-item:last-child,
-  .press-item:last-child {
-    border-bottom: 1px solid var(--line);
-  }
-
-  .press-title {
-    font-size: 0.98rem;
-    line-height: 1.5;
-    transition: color 0.15s ease;
-  }
-
-  .press-item:hover .press-title {
-    color: var(--accent);
-  }
-
-  .press-source {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--ink-soft);
-    font-style: italic;
-    margin-top: 3px;
-  }
-
-  footer {
-    margin-top: 8px;
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-    font-style: italic;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #201b16;
-      --ink: #e6ddd0;
-      --ink-soft: #9c8f7c;
-      --accent: #c9a876;
-      --line: #35302a;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #2b2621;
+      --ink-soft: #786c5e;
+      --accent: #7a5c43;
+      --line: #ece7de;
+      --badge-bg: #f5f2eb;
+      --badge-text: #6b5e4f;
     }
-  }
-  :root[data-theme="dark"] {
-    --bg: #201b16;
-    --ink: #e6ddd0;
-    --ink-soft: #9c8f7c;
-    --accent: #c9a876;
-    --line: #35302a;
-  }
 
-  @media (max-width: 420px) {
-    body { padding-top: 64px; }
-  }
-</style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, 'Iowan Old Style', serif;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    i,
+    em,
+    .role,
+    .bio,
+    .tags,
+    .media-btn,
+    .press-source,
+    footer,
+    span {
+      font-style: normal !important;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 80px 24px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 620px;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      flex-shrink: 0;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 2.1rem;
+      margin: 0 0 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+
+    .institution {
+      margin: 3px 0 0;
+      font-size: 0.96rem;
+      color: var(--ink-soft);
+    }
+
+    .institution a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .institution a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .bio {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--ink);
+      text-align: justify;
+      text-justify: inter-word;
+      margin: 0 0 24px;
+    }
+
+    .tags {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      margin: 0 0 40px;
+      line-height: 1.6;
+    }
+
+    /* Photo Showcase */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 0 0 48px;
+    }
+
+    .photo-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+
+    .photo-caption {
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+      margin-top: 8px;
+    }
+
+    h2 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-soft);
+      margin: 0 0 18px;
+    }
+
+    /* Featured Project Card */
+    .project-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px 24px;
+      background: #faf8f5;
+      margin: 0 0 52px;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(122, 92, 67, 0.08);
+    }
+
+    .project-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .project-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .project-logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(11, 27, 43, 0.15);
+      flex-shrink: 0;
+    }
+
+    .project-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .project-tagline {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      margin-top: 1px;
+    }
+
+    .project-badge {
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 8px;
+      background: #e6f4ea;
+      color: #137333;
+      border-radius: 4px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .project-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      font-family: system-ui, -apple-system, sans-serif;
+      transition: opacity 0.15s ease;
+      padding: 6px 12px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .project-link-btn:hover {
+      opacity: 0.85;
+      border-color: var(--accent);
+    }
+
+    .project-desc {
+      font-size: 0.94rem;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 0 0 16px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .project-tags span {
+      font-size: 0.78rem;
+      color: var(--badge-text);
+      background: var(--badge-bg);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* CV Section Lists */
+    .cv-list {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 52px;
+    }
+
+    .cv-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .cv-list .cv-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cv-main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cv-title {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .cv-desc {
+      font-size: 0.84rem;
+      color: var(--ink-soft);
+      margin-top: 2px;
+    }
+
+    .cv-inline-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: text-decoration 0.15s ease;
+    }
+
+    .cv-inline-link:hover {
+      text-decoration: underline;
+    }
+
+    .cv-year {
+      font-size: 0.84rem;
+      color: var(--ink-soft);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Instagram Reels Recortes */
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin: 0 0 54px;
+    }
+
+    .ig-reel-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #faf8f5;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .ig-reel-card:hover {
+      border-color: #d62976;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(214, 41, 118, 0.08);
+    }
+
+    .ig-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ig-user-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ig-avatar-ring {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ig-avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ffffff;
+      border: 1.5px solid #ffffff;
+    }
+
+    .ig-user-meta {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+
+    .ig-handle {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink);
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .ig-collab {
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .ig-badge-icon {
+      color: #d62976;
+      display: flex;
+      align-items: center;
+    }
+
+    .ig-thumb-wrap {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background: #1a1a1a;
+      overflow: hidden;
+    }
+
+    .ig-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .ig-reel-card:hover .ig-thumb-img {
+      transform: scale(1.03);
+    }
+
+    .ig-play-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .ig-reel-card:hover .ig-play-overlay {
+      background: rgba(214, 41, 118, 0.85);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .ig-reel-tag {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-weight: 500;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .ig-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .ig-title {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 6px;
+    }
+
+    .ig-snippet {
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .ig-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #d62976;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* Social Media / Academic Links */
+    .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 52px;
+    }
+
+    .media-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 500;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .media-btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      color: var(--ink-soft);
+      transition: color 0.2s ease;
+    }
+
+    .media-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: #faf8f5;
+    }
+
+    .media-btn:hover svg {
+      color: var(--accent);
+    }
+
+    .press-banner {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+
+    .press {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 56px;
+    }
+
+    .press-item {
+      display: block;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .press-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .press-title {
+      font-size: 1.02rem;
+      line-height: 1.6;
+      transition: color 0.15s ease;
+    }
+
+    .press-item:hover .press-title {
+      color: var(--accent);
+    }
+
+    .press-source {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--ink-soft);
+      margin-top: 4px;
+    }
+
+    footer {
+      margin-top: 64px;
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 48px 20px 40px;
+      }
+
+      .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      .photo-grid,
+      .reels-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ig-thumb-wrap {
+        height: 300px;
+      }
+
+      .photo-item img {
+        height: 220px;
+      }
+
+      .cv-item {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .media-btn {
+        flex: 1 1 calc(50% - 8px);
+        justify-content: center;
+        padding: 10px 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<main>
-  <h1>Gerley Adriano</h1>
-  <p class="role">Medical Student &middot; Research &amp; Technology</p>
+  <main>
+    <header class="profile-header">
+      <img src="assets/profile.jpg" alt="Gerley Adriano" class="avatar">
+      <div class="profile-info">
+        <h1>Gerley Adriano</h1>
+        <p class="role">Medical Student &middot; Research &amp; Technology</p>
+        <p class="institution"><a href="https://www4.unievangelica.edu.br/" target="_blank" rel="noopener">Universidade Evangélica de Goiás</a></p>
+      </div>
+    </header>
 
-  <p class="bio">
-    Medical student at UniEVANGÉLICA, involved in student leadership with IFMSA Brazil
-    and in scientific research. Interested in applying artificial intelligence to healthcare
-    and building technology for medicine.
-  </p>
+    <p class="bio">
+      Medical student at UniEVANGÉLICA, researcher in healthcare AI, biostatistics, and medical software. Statistical reviewer for the Brazilian Medical Students Journal, Western Regional Assistant for IFMSA Brazil's scientific team, and founder of Cardio, dedicated to building intelligent solutions that transform evidence-based medicine.
+    </p>
 
-  <p class="tags">Medicine &middot; IFMSA &middot; Scientific Research &middot; Software Development</p>
+    <p class="tags">Medicine &ensp;&middot;&ensp; IFMSA &ensp;&middot;&ensp; Scientific Research &ensp;&middot;&ensp;
+      Software Development</p>
 
-  <nav class="links">
-    <a class="link-row" href="mailto:g3rley@gmail.com">
-      <span class="link-label">Email</span>
-      <span class="link-value">g3rley@gmail.com</span>
-    </a>
-    <a class="link-row" href="https://github.com/g3rley" target="_blank" rel="noopener">
-      <span class="link-label">GitHub</span>
-      <span class="link-value">@g3rley</span>
-    </a>
-    <a class="link-row" href="https://br.linkedin.com/in/g3rley/en" target="_blank" rel="noopener">
-      <span class="link-label">LinkedIn</span>
-      <span class="link-value">/in/g3rley</span>
-    </a>
-    <a class="link-row" href="https://www.instagram.com/g3rley/" target="_blank" rel="noopener">
-      <span class="link-label">Instagram</span>
-      <span class="link-value">@g3rley</span>
-    </a>
-  </nav>
+    <div class="photo-grid">
+      <div class="photo-item">
+        <img src="assets/presentation.jpg" alt="Research presentation at medical congress">
+        <span class="photo-caption">Presenting research at national medical congress</span>
+      </div>
+      <div class="photo-item">
+        <img src="assets/whiteboard.jpg" alt="Building technology and software architecture">
+        <span class="photo-caption">Architecture & software engineering for healthcare</span>
+      </div>
+    </div>
 
-  <h2>Featured In</h2>
-  <div class="press">
-    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/unievangelica-se-destaca-em-congresso-nacional-de-medicina-com-11-trabalhos-aprovados" target="_blank" rel="noopener">
-      <span class="press-title">UniEVANGÉLICA stands out at national medical congress with 11 papers accepted</span>
-      <span class="press-source">UniEVANGÉLICA News</span>
-    </a>
-    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/curso-de-medicina-brilha-em-encontro-regional-da-ifmsa-brazil-com-pesquisa-premiada" target="_blank" rel="noopener">
-      <span class="press-title">Medical program shines at IFMSA Brazil regional meeting with award-winning research</span>
-      <span class="press-source">UniEVANGÉLICA News</span>
-    </a>
-    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/ideias-que-transformam-academicos-da-unievangelica-brilham-no-2o-hackathon" target="_blank" rel="noopener">
-      <span class="press-title">Ideas that transform: UniEVANGÉLICA students shine at the 2nd Hackathon</span>
-      <span class="press-source">UniEVANGÉLICA News</span>
-    </a>
-    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/alunos-de-medicina-representam-goias-na-62a-assembleia-geral-da-ifmsa-brazil" target="_blank" rel="noopener">
-      <span class="press-title">Medical students represent Goiás at the 62nd IFMSA Brazil General Assembly</span>
-      <span class="press-source">UniEVANGÉLICA News</span>
-    </a>
-    <a class="press-item" href="https://www4.unievangelica.edu.br/noticia/estudantes-de-medicina-da-unievangelica-se-destacam-no-9o-congresso-de-educacao-medica-do-centro-oeste" target="_blank" rel="noopener">
-      <span class="press-title">Medical students stand out at the 9th Midwest Medical Education Congress</span>
-      <span class="press-source">UniEVANGÉLICA News</span>
-    </a>
-  </div>
+    <h2>Featured Venture</h2>
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title-wrap">
+          <img src="assets/cardio-logo.png" alt="Cardio Logo" class="project-logo">
+          <div>
+            <div class="project-title-row">
+              <span class="project-name">Cardio</span>
+              <span class="project-badge">Live Platform</span>
+            </div>
+            <span class="project-tagline">ECG Training &amp; ACLS Decision Engine</span>
+          </div>
+        </div>
+        <a class="project-link-btn" href="https://cardiogame.com.br/" target="_blank" rel="noopener">
+          <span>cardiogame.com.br</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+      <p class="project-desc">
+        Gamified platform for electrocardiogram training and clinical decision-making in cardiovascular emergencies and ACLS protocols under pressure. Features 112+ real rhythm tracings, 25 clinical protocols, and performance analytics to track diagnostic progression.
+      </p>
+      <div class="project-tags">
+        <span>Cardiology</span>
+        <span>Medical Education</span>
+        <span>ACLS Simulation</span>
+        <span>Software &amp; Analytics</span>
+      </div>
+    </div>
 
-  <footer>Anápolis, Goiás — Brazil</footer>
-</main>
+    <h2>Awards &amp; Honors</h2>
+    <div class="cv-list">
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">1st Place — Scientific Session</span>
+          <span class="cv-desc">1º Lugar no Momento Científico &middot; 64ª Assembleia Geral (Fortaleza-CE), IFMSA
+            Brazil</span>
+        </div>
+        <span class="cv-year">2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">1st Place — Regional Scientific Session</span>
+          <span class="cv-desc">1º Lugar no Momento Científico &middot; IX Assembleia Geral Regional Oeste (Cuiabá-MT),
+            IFMSA Brazil</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">1st Place — II Hackathon</span>
+          <span class="cv-desc">1º Lugar no II Hackathon &middot; UniEVANGÉLICA</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">3rd Place — Scientific Session</span>
+          <span class="cv-desc">3º Lugar no Momento Científico &middot; 63ª Assembleia Geral (Uberlândia-MG), IFMSA
+            Brazil</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Scientific Merit Award</span>
+          <span class="cv-desc">Mérito Científico &middot; IX Congresso de Educação Médica do Centro-Oeste</span>
+        </div>
+        <span class="cv-year">2024</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Scientific Merit Award</span>
+          <span class="cv-desc">Mérito Científico &middot; III CONAETI</span>
+        </div>
+        <span class="cv-year">2024</span>
+      </div>
+    </div>
+
+    <h2>Academic &amp; Research Experience</h2>
+    <div class="cv-list">
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Statistical Reviewer</span>
+          <span class="cv-desc">Revisor estatístico do <a href="https://revistas.ifmsabrazil.org/bms/" target="_blank" rel="noopener" class="cv-inline-link">Brazilian Medical Students Journal (BMSJ) ↗</a></span>
+        </div>
+        <span class="cv-year">2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Scientific Team Member &amp; Western Regional Assistant</span>
+          <span class="cv-desc">Membro do time científico e Assistente Regional Oeste &middot; IFMSA Brazil</span>
+        </div>
+        <span class="cv-year">2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Technological Development &amp; Innovation Fellow (PIBITI/CNPq)</span>
+          <span class="cv-desc">Pesquisador do Programa de Iniciação em Desenvolvimento Tecnológico e Inovação
+            (IDT&amp;I) &middot; PIBITI/CNPq</span>
+        </div>
+        <span class="cv-year">2025–2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Technological Innovation Fellow</span>
+          <span class="cv-desc">Bolsista do Programa de Talentos &middot; Núcleo de Inovação Tecnológica (FAPEG)</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">PBIDPT Scientific Research Fellow</span>
+          <span class="cv-desc">Bolsista de iniciação tecnológica PBIDPT &middot; FUNADESP</span>
+        </div>
+        <span class="cv-year">2025–2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Undergraduate Research Fellow (PVIC)</span>
+          <span class="cv-desc">Pesquisador do Programa Voluntário de Iniciação Científica</span>
+        </div>
+        <span class="cv-year">2024–2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Scientific Department Member</span>
+          <span class="cv-desc">Membro do departamento científico &middot; DAJAF</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Associate Member</span>
+          <span class="cv-desc">Membro associado da Sociedade Brasileira de Clínica Médica (SBCM)</span>
+        </div>
+        <span class="cv-year">2024–Present</span>
+      </div>
+    </div>
+
+    <h2>Leadership &amp; Engagement</h2>
+    <div class="cv-list">
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Local President</span>
+          <span class="cv-desc">Presidente Local &middot; IFMSA Brazil UniEvangélica</span>
+        </div>
+        <span class="cv-year">2026</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Local Vice President for External Affairs</span>
+          <span class="cv-desc">Vice-Presidente Local para Assuntos Externos &middot; IFMSA Brazil UniEvangélica</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Administrative Director</span>
+          <span class="cv-desc">Diretor Administrativo do VII CAMEG</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Organizing Committee Member</span>
+          <span class="cv-desc">Membro da comissão organizadora do VII CIPEEX</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Treasurer — Class Graduation Committee</span>
+          <span class="cv-desc">Tesoureiro da Comissão de Formatura &middot; Turma XXX</span>
+        </div>
+        <span class="cv-year">2025</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Integrative Week Student Leader</span>
+          <span class="cv-desc">Líder da Semana Integrativa (2023.1, 2024.1, 2024.2) &middot; UniEVANGÉLICA</span>
+        </div>
+        <span class="cv-year">2023–2024</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Scientific Organizing Committee Member</span>
+          <span class="cv-desc">Membro da equipe organizadora científica do VI CAMEG</span>
+        </div>
+        <span class="cv-year">2024</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Volunteer Member — Outreach Project</span>
+          <span class="cv-desc">Membro voluntário do Projeto de Extensão Irmãos Invisíveis</span>
+        </div>
+        <span class="cv-year">2024</span>
+      </div>
+      <div class="cv-item">
+        <div class="cv-main">
+          <span class="cv-title">Small Group Student Leader</span>
+          <span class="cv-desc">Líder de Pequeno Grupo (PG) &middot; Turma XXX Capelania</span>
+        </div>
+        <span class="cv-year">2024</span>
+      </div>
+    </div>
+
+    <h2>Institutional Spotlight &middot; Instagram Reels</h2>
+    <div class="reels-grid">
+      <a class="ig-reel-card" href="https://www.instagram.com/reel/DI7U0kiybqz/" target="_blank" rel="noopener">
+        <div class="ig-header">
+          <div class="ig-user-wrap">
+            <div class="ig-avatar-ring">
+              <img src="assets/profile.jpg" alt="Gerley Adriano" class="ig-avatar-img">
+            </div>
+            <div class="ig-user-meta">
+              <span class="ig-handle">@g3rley</span>
+              <span class="ig-collab">&bull; com @unievangelica</span>
+            </div>
+          </div>
+          <div class="ig-badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="ig-thumb-wrap">
+          <img src="assets/reel1.jpg" alt="Trajetória Acadêmica e Pesquisa na Medicina" class="ig-thumb-img">
+          <div class="ig-play-overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <div class="ig-reel-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            <span>Reel</span>
+          </div>
+        </div>
+        <div class="ig-body">
+          <div>
+            <div class="ig-title">Trajetória, Pesquisa &amp; Vocação Médica</div>
+            <div class="ig-snippet">Compartilhando a experiência de participar de congressos científicos e desenvolver pesquisas desde o início da graduação.</div>
+          </div>
+          <div class="ig-cta">
+            <span>Assistir no Instagram</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <a class="ig-reel-card" href="https://www.instagram.com/reel/Dc4IiHnR9AP/" target="_blank" rel="noopener">
+        <div class="ig-header">
+          <div class="ig-user-wrap">
+            <div class="ig-avatar-ring">
+              <img src="assets/profile.jpg" alt="Gerley Adriano" class="ig-avatar-img">
+            </div>
+            <div class="ig-user-meta">
+              <span class="ig-handle">@g3rley</span>
+              <span class="ig-collab">&bull; com @unievangelica</span>
+            </div>
+          </div>
+          <div class="ig-badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="ig-thumb-wrap">
+          <img src="assets/reel2.jpg" alt="A Relação Médico-Paciente: Ouvir também é cuidar" class="ig-thumb-img">
+          <div class="ig-play-overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </div>
+          <div class="ig-reel-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            <span>Reel</span>
+          </div>
+        </div>
+        <div class="ig-body">
+          <div>
+            <div class="ig-title">Relação Médico-Paciente: Ouvir é Cuidar</div>
+            <div class="ig-snippet">Reflexão sobre escuta ativa, empatia e humanização do cuidado médico construído na relação de troca com o paciente.</div>
+          </div>
+          <div class="ig-cta">
+            <span>Assistir no Instagram</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <h2>Featured In</h2>
+    <img src="assets/team.jpg" alt="IFMSA Brazil Scientific Team" class="press-banner">
+
+    <div class="press">
+      <a class="press-item"
+        href="https://www4.unievangelica.edu.br/noticia/unievangelica-se-destaca-em-congresso-nacional-de-medicina-com-11-trabalhos-aprovados"
+        target="_blank" rel="noopener">
+        <span class="press-title">UniEVANGÉLICA stands out at national medical congress with 11 papers accepted</span>
+        <span class="press-source">UniEVANGÉLICA News</span>
+      </a>
+      <a class="press-item"
+        href="https://www4.unievangelica.edu.br/noticia/curso-de-medicina-brilha-em-encontro-regional-da-ifmsa-brazil-com-pesquisa-premiada"
+        target="_blank" rel="noopener">
+        <span class="press-title">Medical program shines at IFMSA Brazil regional meeting with award-winning
+          research</span>
+        <span class="press-source">UniEVANGÉLICA News</span>
+      </a>
+      <a class="press-item"
+        href="https://www4.unievangelica.edu.br/noticia/ideias-que-transformam-academicos-da-unievangelica-brilham-no-2o-hackathon"
+        target="_blank" rel="noopener">
+        <span class="press-title">Ideas that transform: UniEVANGÉLICA students shine at the 2nd Hackathon</span>
+        <span class="press-source">UniEVANGÉLICA News</span>
+      </a>
+      <a class="press-item"
+        href="https://www4.unievangelica.edu.br/noticia/alunos-de-medicina-representam-goias-na-62a-assembleia-geral-da-ifmsa-brazil"
+        target="_blank" rel="noopener">
+        <span class="press-title">Medical students represent Goiás at the 62nd IFMSA Brazil General Assembly</span>
+        <span class="press-source">UniEVANGÉLICA News</span>
+      </a>
+      <a class="press-item"
+        href="https://www4.unievangelica.edu.br/noticia/estudantes-de-medicina-da-unievangelica-se-destacam-no-9o-congresso-de-educacao-medica-do-centro-oeste"
+        target="_blank" rel="noopener">
+        <span class="press-title">Medical students stand out at the 9th Midwest Medical Education Congress</span>
+        <span class="press-source">UniEVANGÉLICA News</span>
+      </a>
+    </div>
+
+    <h2>Connect</h2>
+    <div class="social-buttons">
+      <a class="media-btn" href="mailto:g3rley@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        <span>Email</span>
+      </a>
+      <a class="media-btn" href="http://lattes.cnpq.br/2315703716723494" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span>Currículo Lattes</span>
+      </a>
+      <a class="media-btn" href="https://orcid.org/0009-0001-5303-8251" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.434h2.238c2.644 0 3.787-1.781 3.787-3.712 0-2.156-1.397-3.722-3.816-3.722h-2.209z"/>
+        </svg>
+        <span>ORCID iD</span>
+      </a>
+      <a class="media-btn" href="https://github.com/g3rley" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <a class="media-btn" href="https://br.linkedin.com/in/g3rley/en" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <a class="media-btn" href="https://www.instagram.com/g3rley/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </main>
 </body>
+
 </html>
